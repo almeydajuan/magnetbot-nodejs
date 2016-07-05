@@ -1,5 +1,6 @@
 {
   "appSecret": "EAANeGQLckDoBAOhuOf6wv0ve9idoqoWZAjeu2lgOvCIM2Ow6hKKZB35ugNJYzNM9SxUxTs0guOOzkZC3z5OwTZBJwZCD34BgFfrnhV1TfsZAZCyPkt95wQ8C5PlnQGY9aj7zt3ndH3KK2aVTkpfjVr0TxTYBkqQLqTuZBjOsMfUp0gZDZD",
   "pageAccessToken": "pedofilia",
-  "validationToken": "pedofilia"
+  "validationToken": "pedofilia",
+  "port": "8080"
 }

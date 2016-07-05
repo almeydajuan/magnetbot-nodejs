@@ -20,7 +20,7 @@ const
 
 var app = express();
 
-app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT || config.get('port'));
 app.use(bodyParser.json({ verify: verifyRequestSignature }));
 app.use(express.static('public'));
 
@@ -49,6 +49,11 @@ if (!(APP_SECRET && VALIDATION_TOKEN && PAGE_ACCESS_TOKEN)) {
   console.error("Missing config values");
   process.exit(1);
 }
+
+app.get('/ping', function(req, res) {
+  console.log("Ping received");
+  res.status(200).send("pong");
+});
 
 /*
  * Use your own validation token. Check that the token used in the Webhook 
